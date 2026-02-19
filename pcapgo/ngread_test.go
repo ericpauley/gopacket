@@ -1947,6 +1947,7 @@ func TestTruncatedDiscard(t *testing.T) {
 		return
 	} else {
 		t.Error("Expected io.ErrUnexpectedEOF, got:", err)
+		t.FailNow()
 	}
 }
 
